@@ -1,0 +1,87 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgb(68, 64, 64);
+}
+
+.personas-container{
+    margin: 300px auto;
+    width: 500px;
+    display: flex;
+}
+
+
+.personas-container .persona{
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+.personas-container .persona img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 3px rgb(112, 225, 233);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.personas-container .persona .name{
+    position: absolute;
+    background-color: rgb(112, 225, 233);
+    color: black;
+    border: solid 2px white;
+    border-radius: 5px;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    top: -55px;
+    left: calc((100% - 60px) * -1);
+    padding: 10px 15px;
+}
+
+
+.personas-container .persona:hover .name {
+    display: inline-block;
+}
+
+
+
+.personas-container .persona .name .text{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box ;
+    
+
+
+
+}
+
+
+
+.personas-container .persona .name::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: solid 10px rgb(112, 225, 233);
+    border-bottom: solid 10px transparent;
+    border-left: solid 10px   transparent;
+    border-right: solid 10px transparent;
+    left: calc(50% - 10px);
+    bottom: -20px;
+
+
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(112, 225, 233);
+    padding: 50px;
+}
