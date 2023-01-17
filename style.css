@@ -3,9 +3,13 @@ body{
     background-color: rgb(68, 64, 64);
 }
 
+.title{
+    margin-top: 200px;
+}
+
 .personas-container{
-    margin: 300px auto;
-    width: 500px;
+    margin: 50px auto;
+    width: 450px;
     display: flex;
 }
 
